@@ -59,11 +59,15 @@ body{
 }
 
 .prawo{
-    float:left;
 }
 
 p{
     color:#6A5ACD;
     font-size: 33px;
     text-align: center;
+}
+
+#counter{
+    color:rgb(141, 243, 250);
+    font-size: 40px;
 }

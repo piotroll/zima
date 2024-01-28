@@ -30,5 +30,24 @@
         <img src="narciarz.gif" alt="narciarz" width="600px" height="600px">
         <img src="balwan.gif" alt="snowman" width="600px" height="600px">
     </div>
+
+    <script>
+        function updateCounter() {
+            if (localStorage.getItem('visitCount')) {
+                var count = parseInt(localStorage.getItem('visitCount')) + 1;
+            } else {
+                var count = 1;
+            }
+
+            localStorage.setItem('visitCount', count);
+
+            document.getElementById('counter').innerText = 'Liczba odwiedzin: ' + count;
+        }
+
+        window.onload = function () {
+            updateCounter();
+        };
+    </script>
+    <p id="counter">Liczba odwiedzin: 0</p>
 </body>
 </html>
